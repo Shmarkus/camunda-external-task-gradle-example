@@ -1,0 +1,17 @@
+group "ee.codehouse"
+version "1.0-SNAPSHOT"
+
+apply plugin: "java"
+apply plugin: "idea"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.camunda.bpm:camunda-external-task-client:1.0.0")
+    testCompile("junit:junit:4.12")
+}
